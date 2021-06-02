@@ -73,6 +73,9 @@ $(function () {
 
    });
 
+
+
+
    $('.quantity-button').on('click', function () {
       let summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1) * $('.summ').data('guests');
       $('.summ').html('$ ' + summ);
@@ -84,7 +87,13 @@ $(function () {
    //End Quantity
 
    $('.surfboard-box__circle').on('click', function () {
-      $(this).toggleClass('active')
+      $(this).toggleClass('active');
+   });
+
+   //Menu
+
+   $('.menu-btn').on('click', function () {
+      $('.menu').toggleClass('active');
    });
 
 });
