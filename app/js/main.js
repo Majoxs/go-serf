@@ -152,4 +152,8 @@ $(function () {
       $('.menu').toggleClass('active');
    });
 
+   //WOW js
+
+   new WOW().init();
+
 });

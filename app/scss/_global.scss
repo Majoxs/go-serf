@@ -14,6 +14,8 @@ body {
    background-color: #171919;
    color: #fff;
    text-transform: uppercase;
+   min-width: 320px;
+   overflow-x: hidden;
 }
 
 a {
@@ -73,12 +75,15 @@ li {
 }
 
 .title {
-   span {
+   div {
       font-size: 200px;
       font-weight: 800;
       color: rgba(#fff, 0.02);
       position: relative;
       transform: translateX(-50px);
+      display: inline-block;
+   }
+   span {
       display: inline-block;
    }
    h3 {
